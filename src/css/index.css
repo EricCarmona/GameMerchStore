@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jersey 25", sans-serif;
+}
+
+/* Base REM setup → 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1E2326;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ====== HEADER BASE ====== */
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 1rem 15rem;
+  background-color: #1E2326;
+  box-shadow: 0 0.5px 0 0 #78308A;
+}
+
+/* ====== LEFT SIDE ====== */
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo svg {
+  color: #78308A;
+  width: 5rem;
+  height: 5rem;
+}
+
+.header__title {
+  font-size: 4rem; 
+  font-weight: bold;
+  color: #78308A;
+}
+
+/* ====== NAV ====== */
+.header__nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.header__nav-button {
+  position: relative;
+  padding: 1rem 2.2rem 1rem 3rem;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: none;
+  border-radius: 0.5rem;
+}
+
+.header__nav-button::before {
+  content: '';
+  position: absolute;
+  left: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+/* Different colors for each button */
+.btn-nintendo::before { background-color: #ff1e1e; }
+.btn-play::before { background-color: #1E90FF; }
+.btn-xbox::before { background-color: #00C853; } 
+.btn-indie::before { background-color: #d236ee; } 
+
+.header__nav-button:hover {
+  background:#78308A;
+}
+
+/* ====== RIGHT SIDE ====== */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* ====== SEARCH ====== */
+.header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header__search-button {
+  display: flex;
+  align-items: center;
+  background: #2a2f32;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  gap: 0.8rem;
+}
+
+.header__search-button svg {
+  color: #555;
+  width: 2rem;
+  height: 2rem;
+}
+
+.header__search-input {
+  border: none;
+  background: #2a2f32;
+  outline: none;
+  font-size: 1.6rem; /* 16px */
+  padding: 0.4rem;
+  color: #7f7f7f;
+}
+
+/* ====== DARK MODE ====== */
+.header__darkMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2f32;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+}
+
+.header__darkMode:hover {
+  background: #3a3f42;
+  transform: scale(1.05);
+}
+
+.header__darkMode svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: #fff;
+}
+
+.header__darkMode:hover {
+  transform: scale(1.1);
+}
+
+/* ====== LOGIN BUTTON ====== */
+.header__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: #2a2f32;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.header__login svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header__login:hover {
+  background: #3a3f42;
+  transform: scale(1.05);
+}
+
+/* ====== CART BUTTON ====== */
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2f32;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.header__cart svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.header__cart:hover {
+  background: #3a3f42;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 2rem;
+  right: 14rem;
+  background-color: #d4183d;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 40%;
+  align-items: center;
+  pointer-events: none;
+}
+
+
+/* ====== END HEADER ====== */
+
+
+/* ====== MAIN ====== */
+
+main {
+  display: flex;
+  padding: 1rem 15rem;
+}
+
+.container__products {
+  font-size: 2rem;
+}
