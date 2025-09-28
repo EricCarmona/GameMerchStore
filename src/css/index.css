@@ -8,9 +8,15 @@
   font-family: "Jersey 25", sans-serif;
 }
 
+/* Cursor style implementation */
 /* Base REM setup → 1rem = 10px */
 html {
   font-size: 62.5%;
+    cursor: url(../assets/mouseStyle/cursor_darkMode.png), auto;
+}
+
+button, input{
+  cursor: url(../assets/mouseStyle/cursorLink_darkMode.png), auto;
 }
 
 body {
@@ -61,7 +67,6 @@ body {
   border: none;
   color: #fff;
   font-size: 1.6rem;
-  cursor: pointer;
   background: none;
   border-radius: 0.5rem;
 }
@@ -133,7 +138,6 @@ body {
   background: #2a2f32;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  cursor: pointer;
   color: #fff;
   transition: background 0.3s, transform 0.2s;
   border: none;
@@ -164,7 +168,6 @@ body {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1.6rem;
-  cursor: pointer;
   color: #fff;
   border: none;
   transition: background 0.3s, transform 0.2s;
@@ -190,7 +193,6 @@ body {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
-  cursor: pointer;
   color: #fff;
   transition: background 0.3s, transform 0.2s;
 }
