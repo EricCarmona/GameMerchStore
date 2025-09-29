@@ -19,5 +19,9 @@ searchInput.addEventListener('input', () => {
     noResultsMessage.style.display = anyVisible ? 'none' : 'block';
 });
 
-
+const darkModeBtn = document.querySelector('.header__darkMode');
+darkModeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
+});
 // Test code
